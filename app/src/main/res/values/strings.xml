@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Task_044</string>
+    <string name="red_fragment">«Стой!»</string>
+    <string name="exit">Exit</string>
+    <string name="yellow_fragment">«Внимание!»</string>
+    <string name="green_fragment">«Движение разрешено!»</string>
+</resources>

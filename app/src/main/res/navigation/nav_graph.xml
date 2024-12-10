@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment"
+    >
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.task_044.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_redFragment"
+            app:destination="@+id/redFragment"
+            app:enterAnim="@anim/side_in_right"
+            app:exitAnim="@anim/side_out_left" />
+        <action
+            android:id="@+id/action_mainFragment_to_yellowFragment"
+            app:destination="@+id/yellowFragment"
+            app:enterAnim="@anim/side_in_right"
+            app:exitAnim="@anim/side_out_left"
+            />
+        <action
+            android:id="@+id/action_mainFragment_to_greenFragment"
+            app:destination="@+id/greenFragment"
+            app:enterAnim="@anim/side_in_right"
+            app:exitAnim="@anim/side_out_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/redFragment"
+        android:name="com.example.task_044.RedFragment"
+        android:label="fragment_red"
+        tools:layout="@layout/fragment_red">
+        <action
+            android:id="@+id/action_redFragment_to_mainFragment"
+            app:destination="@+id/mainFragment"
+            app:enterAnim="@anim/side_out_right"
+            app:exitAnim="@anim/side_in_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/yellowFragment"
+        android:name="com.example.task_044.YellowFragment"
+        android:label="fragment_yellow"
+        tools:layout="@layout/fragment_yellow">
+        <action
+            android:id="@+id/action_yellowFragment_to_mainFragment"
+            app:destination="@+id/mainFragment"
+            app:enterAnim="@anim/side_out_right"
+            app:exitAnim="@anim/side_in_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/greenFragment"
+        android:name="com.example.task_044.GreenFragment"
+        android:label="fragment_green"
+        tools:layout="@layout/fragment_green">
+        <action
+            android:id="@+id/action_greenFragment_to_mainFragment"
+            app:destination="@+id/mainFragment"
+            app:enterAnim="@anim/side_out_right"
+            app:exitAnim="@anim/side_in_left" />
+    </fragment>
+</navigation>
+
+
+
+
